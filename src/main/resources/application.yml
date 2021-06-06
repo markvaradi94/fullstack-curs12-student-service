@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+      uri: "mongodb+srv://mark:mazare123@greencluster.rewht.mongodb.net/course12DB?retryWrites=true&w=majority"
+  application:
+    name: STUDENT-SERVICE
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
